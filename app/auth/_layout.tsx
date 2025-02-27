@@ -6,7 +6,7 @@ import { ActivityIndicator, View } from "react-native";
 const AuthLayout = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(auth.currentUser);
   if (isAuthenticated?.uid) {
-    return <Redirect href="/" />;
+    return <Redirect href="/(tabs)" />;
   }
 
   return <Slot />;

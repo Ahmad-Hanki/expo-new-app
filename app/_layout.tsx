@@ -38,9 +38,8 @@ export default function RootLayout() {
     <GluestackUIProvider mode={colorScheme === "dark" ? "dark" : "light"}>
       <ReactQueryProvider>
         <Stack>
-          <Stack.Screen name="index" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/signUp" />
-          <Stack.Screen name="auth/signIn" />
+          <Stack.Screen name="auth" options={{ headerShown: false }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false,  }} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
